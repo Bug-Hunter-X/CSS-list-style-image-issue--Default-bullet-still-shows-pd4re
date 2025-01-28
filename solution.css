@@ -1,0 +1,14 @@
+To fix this, add `list-style-type: none;` to the `<ul>` or `<li>` element's style. This will remove the default bullet, allowing the custom image to take its place. 
+
+```css
+<ul style="list-style-type: none;">
+  <li style="list-style-image: url('https://example.com/bullet.png');">
+    Item 1
+  </li>
+  <li style="list-style-image: url('https://example.com/bullet.png');">
+    Item 2
+  </li>
+</ul>
+```
+Alternatively, you can add it to each list item if you want different images for different items.
+This ensures the custom image is displayed correctly without the default bullet interfering.
