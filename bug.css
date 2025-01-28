@@ -1,0 +1,11 @@
+The following CSS code snippet is supposed to style a list with specific bullet points. However, it doesn't work as expected because of the missing `list-style-type` property.  The `list-style-image` property is defined but without a preceding `list-style-type: none;` to remove the default bullet, the image will appear beside and not replace the default bullet. 
+```css
+<ul>
+  <li style="list-style-image: url('https://example.com/bullet.png');">
+    Item 1
+  </li>
+  <li>
+    Item 2
+  </li>
+</ul>
+```
